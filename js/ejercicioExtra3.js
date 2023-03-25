@@ -113,6 +113,6 @@ let productoBruma = listaProductos.find((producto) =>
   producto.nombreProducto.includes("Bruma")
 );
 
-productoBruma != undefined ? dibujarTabla([productoBruma]) : document.write("Lo sentimos. No se encontró el producto solicitado");
+productoBruma != undefined ? dibujarTabla([productoBruma]) : document.write("<p>Lo sentimos. No se encontró el producto solicitado<p>");
 
 
