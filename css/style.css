@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.title {
+  font-family: "Press Start 2P", cursive;
+  color: salmon;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contenedorJuego {
+  font-family: "Press Start 2P", cursive;
+  padding: 10%;
+  border: 1px solid salmon;
+}
+
+.contenedorMovimientos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.botonMovimiento {
+  display: inline;
+  background-color: gray;
+  font-size: 4rem;
+  width: 8rem;
+  padding-bottom: 1rem;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.botonMovimiento:hover {
+  opacity: 0.5;
+  transform: scale(1.100);
+}
+
+.contenedorScore {
+  border: 1px solid white;
+  margin: 1rem 0rem;
+  padding: 1rem 0.5rem;
+  color: salmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedorScore span {
+  color: white;
+}
+
+#contenedorInfoMovimientos {
+  padding: 1rem 0rem;
+  color: bisque;
+  border-bottom: 1px solid white;
+}
+
+.contenedorBtnReiniciar{
+  text-align: center;
+}
+
+.btnReiniciar {
+  font-family: "Press Start 2P", cursive;
+  background-color: gray;
+  margin-top: 1rem;
+  padding: 0.75rem;
+  color: bisque;
+}
