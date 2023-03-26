@@ -72,9 +72,6 @@ const mostrarGanador = () => {
     );
     scoreJugador++;
     contenedorScoreJugador.innerHTML = scoreJugador;
-    let contenedorInfoMovimientos = document.getElementById(
-      "contenedorInfoMovimientos"
-    );
     escribirTexto(
       `Elegiste ${movimientoUsuario} y la PC eligió ${movimientoPC}. ¡Ganaste!`,
       "contenedorInfoMovimientos"
