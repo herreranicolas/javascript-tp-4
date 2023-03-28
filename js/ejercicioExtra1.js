@@ -8,7 +8,7 @@ let persona = {
     "programar",
     "jugar videojuegos",
     "ver películas",
-    "viajar"
+    "viajar",
   ],
   presentarse: function () {
     document.write(
@@ -27,26 +27,30 @@ let persona = {
     document.write("</ul>");
   },
 
-  agregarHobbie: function (hobbie) {
-    this.hobbies.push(hobbie);
+  agregarHobby: function (hobby) {
+    this.hobbies.push(hobby);
   },
 
-  borrarHobbie: function () {
-    this.hobbies.shift();
+  borrarHobby: function (posicion) {
+    this.hobbies.splice(posicion, 1);
   },
 
-  buscarHobbie: function (hobbie) {
-    this.hobbies.includes(hobbie)
-      ? document.write(`El hobbie ${hobbie} si esta en la lista.`)
-      : document.write(`El hobbie ${hobbie} no esta en la lista.`);
+  buscarHobby: function (hobbyBuscado) {
+    let hobbyEncontrado = this.hobbies.find((hobby) =>
+      hobby.includes(hobbyBuscado)
+    );
+
+    hobbyEncontrado
+      ? document.write(`El hobbie ${hobbyBuscado} si esta en la lista.`)
+      : document.write(`El hobbie ${hobbyBuscado} no esta en la lista.`);
   },
 };
 
 persona.presentarse();
-persona.agregarHobbie("tocar la guitarra")
-persona.agregarHobbie("leer libros");
-persona.agregarHobbie("salir con amigos");
+persona.agregarHobby("tocar la guitarra")
+persona.agregarHobby("leer libros");
+persona.agregarHobby("salir con amigos");
 persona.mostrarHobbies()
-persona.buscarHobbie("viajar")
-persona.borrarHobbie()
+persona.buscarHobby("viajar")
+persona.borrarHobby(0)
 persona.mostrarHobbies();
