@@ -36,8 +36,8 @@ let persona = {
   },
 
   buscarHobby: function (hobbyBuscado) {
-    let hobbyEncontrado = this.hobbies.find((hobby) =>
-      hobby.includes(hobbyBuscado)
+    let hobbyEncontrado = this.hobbies.find(hobby =>
+      hobby === hobbyBuscado
     );
 
     hobbyEncontrado
